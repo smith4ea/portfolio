@@ -2,3 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+input::placeholder,
+textarea::placeholder {
+  @apply text-neutral-800 opacity-50;
+}
