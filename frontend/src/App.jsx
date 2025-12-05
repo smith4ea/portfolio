@@ -64,6 +64,16 @@ export default function App() {
       <Icon name="StarIcon" variant="solid" size="sm" className="text-primary-default" />
       <Icon name="StarIcon" variant="solid" size="lg" className="text-error-default" />
       <Icon name="CheckIcon" variant="solid" size="md" className="text-primary-default" />
+
+      <Button icon="StarIcon" variant="primary" destructive>
+        Favorite
+      </Button>
+      <Card 
+        icon="SparklesIcon"
+        title="Amazing Feature" 
+        description="This card has an icon at the top"
+        iconColor="text-tertiary-default"
+      />
     </div>
   )
 }

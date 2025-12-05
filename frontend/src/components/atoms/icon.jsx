@@ -5,6 +5,7 @@ export default function Icon({
   name, 
   variant = "solid",
   size = "md",
+  color = null,
   className = ""
 }) {
   const icons = variant === "solid" ? HeroIcons : HeroIconsOutline
@@ -22,7 +23,9 @@ export default function Icon({
     return <span>Icon not found: {name}</span>
   }
 
+  const colorClass = color || "text-inherit"
+
   return (
-    <IconComponent className={`${sizes[size]} ${className}`} />
+    <IconComponent className={`${sizes[size]} ${colorClass} ${className}`} />
   )
 }
