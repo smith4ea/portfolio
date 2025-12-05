@@ -8,7 +8,7 @@ export default function Card({
     iconColor = null
 }) {
   return (
-    <div className="bg-neutral-700 p-6 rounded-lg hover:bg-neutral-600 transition space-y-2">
+    <div className="bg-secondary-default p-6 rounded-lg hover:bg-secondary-hover transition space-y-2">
       <div className="flex items-center gap-2">
         {icon && <Icon name={icon} size="lg" color={iconColor} />}
         <Text variant="h3" className="text-primary-default">

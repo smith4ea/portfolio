@@ -10,13 +10,13 @@ export default function Textarea({
 }) {
   return (
     <div className="flex flex-col gap-2">
-      {label && <Text variant="small" className="text-stone-300">{label}</Text>}
+      {label && <Text variant="small" className="text-primary-default">{label}</Text>}
       <textarea
         placeholder={placeholder}
         value={value}
         onChange={onChange}
         rows={rows}
-        className={`bg-stone-300 text-neutral-800 border border-neutral-600 rounded-lg px-4 py-2 focus:outline-none focus:border-stone-300 transition resize-none ${className}`}
+        className={`bg-primary-default text-secondary-default rounded-lg px-4 py-2 focus:outline-none border focus:border-tertiary-default transition resize-none ${className}`}
       />
     </div>
   )
