@@ -12,6 +12,7 @@ I spent the last 5 years as a UX designer, learning how to think about user need
 - **Backend**: TBD
 - **Databases**: TBD
 - **Tools**: Git, GitHub, VSCode, Cursor, Claude
+- **Icons** https://heroicons.com/
 
 ## Goals for This Portfolio
 

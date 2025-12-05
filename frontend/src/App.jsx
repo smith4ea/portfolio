@@ -5,6 +5,7 @@ import NavLink from './components/molecules/navlink'
 import Card from './components/molecules/card'
 import Input from './components/molecules/input'
 import Textarea from './components/molecules/textarea'
+import Icon from './components/atoms/icon'
 import { useState } from 'react'
 
 export default function App() {
@@ -60,6 +61,9 @@ export default function App() {
       />
       <p className="text-stone-300">Character count: {message.length}</p>
 
+      <Icon name="StarIcon" variant="solid" size="sm" className="text-primary-default" />
+      <Icon name="StarIcon" variant="solid" size="lg" className="text-error-default" />
+      <Icon name="CheckIcon" variant="solid" size="md" className="text-primary-default" />
     </div>
   )
 }
