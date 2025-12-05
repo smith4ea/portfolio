@@ -61,11 +61,13 @@ export default function App() {
       />
       <p className="text-stone-300">Character count: {message.length}</p>
 
+      <Text variant="h2">Icons</Text>
       <Icon name="StarIcon" variant="solid" size="sm" className="text-primary-default" />
       <Icon name="StarIcon" variant="solid" size="lg" className="text-error-default" />
       <Icon name="CheckIcon" variant="solid" size="md" className="text-primary-default" />
 
-      <Button icon="StarIcon" variant="primary" destructive>
+      <Text variant="h2">Buttons and Cards with Icons</Text>
+      <Button icon="StarIcon" variant="primary">
         Favorite
       </Button>
       <Card 
