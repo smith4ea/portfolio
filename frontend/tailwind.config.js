@@ -14,13 +14,13 @@ export default {
       colors: {
         primary: {
           default: colors.stone[300],
-          //hover: '#...',
+          hover: colors.stone[100],
           //active: '#...',
           //disabled: '#...',
         },
         secondary: {
           default: colors.neutral[800],
-          //hover: '#...',
+          hover: colors.neutral[600],
           //active: '#...',
           //disabled: '#...',
         },
@@ -42,13 +42,6 @@ export default {
           //active: '#...',
           //disabled: '#...',
         },
-        icon: {
-          default: colors.neutral[300],
-          //hover: '#...',
-          //active: '#...',
-          //disabled: '#...',
-        },
-        brd: colors.neutral[600],
       },
     },
   },

@@ -1,7 +1,12 @@
+import Icon from "../atoms/icon"
+
 export default function Button({
     variant = "primary",
     destructive = false,
     onClick,
+    icon = null,
+    iconColor = null,
+    iconPosition = "left",
     className = "",
     children
 }) {
@@ -24,10 +29,12 @@ const styleClass = destructive ? destructiveVariants[variant] : variants[variant
 
 return (
     <button 
-        onClick={onClick} 
-        className={`${baseStyles} ${styleClass} ${className}`}
+      onClick={onClick} 
+      className={`${baseStyles} ${styleClass} ${className} flex items-center gap-2`}
     >
-        {children}
+      {icon && iconPosition === "left" && <Icon name={icon} size="md" color={iconColor} />}
+      {children}
+      {icon && iconPosition === "right" && <Icon name={icon} size="md" color={iconColor} />}
     </button>
 )
 }

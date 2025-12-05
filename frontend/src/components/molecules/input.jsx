@@ -16,7 +16,7 @@ export default function Input({
         placeholder={placeholder}
         value={value}
         onChange={onChange}
-        className={`bg-stone-300 text-neutral-800 border border-neutral-600 rounded-lg px-4 py-2 focus:outline-none focus:border-stone-300 transition ${className}`}
+        className={`bg-primary-default text-secondary-default rounded-lg px-4 py-2 focus:outline-none border focus:border-tertiary-default transition ${className}`}
       />
     </div>
   )
