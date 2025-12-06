@@ -15,12 +15,12 @@ export default function Header() {
   ]
 
   return (
-    <nav className="sticky top-0 bg-secondary-default shadow-lg z-50">
+    <nav className="fixed w-full top-0 bg-white/10 shadow-lg z-50 backdrop-blur-md border border-gray-200 border-b border-white/20">
       <div className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
 
         <div className="flex items-center gap-2">
-          <Icon name="WindowIcon" size="md" color="text-tertiary-default" />
-          <h1 className="text-2xl font-bold text-primary-default p-1 ">Evan Smith</h1>
+          <Icon name="PaintBrushIcon" size="md" color="text-slate-700" />
+          <h1 className="text-2xl font-bold text-slate-700 p-1 ">Evan Smith</h1>
         </div>
         
         {/* Desktop Navigation */}
@@ -55,7 +55,7 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-secondary-default border-t border-neutral-600">
+        <div className="md:hidden">
           <ul className="flex flex-col gap-4 p-6 list-none">
             <NavLink href="/">Home</NavLink>
             <Dropdown label="Projects" items={usefulLinks} />

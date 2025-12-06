@@ -51,7 +51,7 @@ export default function DesignSystem() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
         />
-        <p className="text-stone-300">Current value: {email}</p>
+        <p className="text-slate-700">Current value: {email}</p>
 
         <Text variant="h2">Textarea</Text>
         <Textarea 
@@ -61,7 +61,7 @@ export default function DesignSystem() {
             onChange={(e) => setMessage(e.target.value)}
             rows={5}
         />
-        <p className="text-stone-300">Character count: {message.length}</p>
+        <p className="text-slate-700">Character count: {message.length}</p>
 
         <Text variant="h2">Icons</Text>
         <Icon name="StarIcon" variant="solid" size="sm" color="text-primary-default" />

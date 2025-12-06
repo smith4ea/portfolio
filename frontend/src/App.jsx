@@ -7,7 +7,7 @@ import DesignSystem from './pages/design-system'
 export default function App() {
   return (
     <BrowserRouter>
-      <Header />
+      <Header/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />

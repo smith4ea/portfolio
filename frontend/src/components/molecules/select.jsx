@@ -32,13 +32,13 @@ export default function Select({
 
   return (
     <div className="flex flex-col gap-2">
-      {label && <Text variant="small" className="text-primary-default">{label}</Text>}
+      {label && <Text variant="small" className="text-slate-700">{label}</Text>}
       
       <div className="relative">
         <button
           ref={buttonRef}
           onClick={() => setIsOpen(!isOpen)}
-          className={`w-full bg-primary-default text-secondary border rounded-lg px-4 py-2 focus:outline-none focus:border-tertiary-default transition cursor-pointer font-sans flex justify-between items-center ${className}`}
+          className={`w-full bg-white text-slate-700 border-2 rounded-lg px-4 py-2 focus:outline-none focus:border-slate-600 transition cursor-pointer font-sans flex justify-between items-center ${className}`}
         >
           <span>{displayLabel}</span>
           <Icon 
@@ -51,7 +51,7 @@ export default function Select({
         {isOpen && (
           <div
             ref={dropdownRef}
-            className={`absolute left-0 right-0 bg-primary-default border rounded-lg shadow-lg z-50 ${
+            className={`absolute left-0 right-0 bg-white border-2 border-neutral-600 rounded-lg shadow-lg z-50 ${
               isAbove ? 'bottom-full mb-2' : 'top-full mt-1'
             }`}
           >
@@ -62,8 +62,8 @@ export default function Select({
                   onChange({ target: { value: option.value } })
                   setIsOpen(false)
                 }}
-                className={`w-full text-left px-4 py-2 hover:bg-stone-400 transition font-sans ${
-                  value === option.value ? 'bg-stone-400' : ''
+                className={`w-full text-left px-4 py-2 hover:bg-slate-100 transition font-sans ${
+                  value === option.value ? 'bg-slate-400' : ''
                 } ${index === 0 ? 'rounded-t-lg' : ''} ${index === options.length - 1 ? 'rounded-b-lg' : ''}`}
               >
                 {option.label}

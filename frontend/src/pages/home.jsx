@@ -3,6 +3,7 @@ import Button from '../components/atoms/button'
 import Text from '../components/atoms/text'
 import Hero from '../components/organisms/hero'
 import heroImage from '../assets/images/heroimage.jpg'
+import Card from '../components/molecules/card'
 
 export default function Home() {
   return (
