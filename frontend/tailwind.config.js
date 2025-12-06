@@ -20,7 +20,7 @@ export default {
         },
         secondary: {
           default: colors.neutral[800],
-          hover: colors.neutral[600],
+          hover: colors.neutral[700],
           //active: '#...',
           //disabled: '#...',
         },

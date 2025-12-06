@@ -7,12 +7,14 @@ import Input from './components/molecules/input'
 import Textarea from './components/molecules/textarea'
 import Icon from './components/atoms/icon'
 import Header from './components/organisms/header'
+import Select from './components/molecules/select'
 import { useState } from 'react'
 
 export default function App() {
 
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
+  const [selectedOption, setSelectedOption] = useState("")
 
   return (
     <div className="bg-neutral-900 min-h-screen space-y-4 space-x-8">
@@ -76,6 +78,29 @@ export default function App() {
           title="Amazing Feature" 
           description="This card has an icon at the top"
           iconColor="text-tertiary-default"
+        />
+
+        <Text variant="h2">Icon Buttons</Text>
+        <Button 
+          variant="icon" 
+          icon="RocketLaunchIcon"
+        />
+        <Button 
+          variant="icon" 
+          icon="TrashIcon"
+          destructive
+        />
+
+        <Text variant="h2">Select</Text>
+        <Select 
+          label="Choose an option"
+          options={[
+            { label: "Option 1", value: "option1" },
+            { label: "Option 2", value: "option2" },
+            { label: "Option 3", value: "option3" },
+          ]}
+          value={selectedOption}
+          onChange={(e) => setSelectedOption(e.target.value)}
         />
       </div>
     </div>
