@@ -10,6 +10,7 @@ import Header from '../components/organisms/header'
 import Select from '../components/molecules/select'
 import { useState } from 'react'
 import Layout from '../components/templates/layout'
+import Hero from '../components/organisms/hero'
 
 export default function DesignSystem() {
 
@@ -19,10 +20,6 @@ export default function DesignSystem() {
 
     return (
     <Layout>
-
-        
-
-        <div className="bg-neutral-900 min-h-screen p-8 space-y-4 space-x-8">
         <Text variant="h1">H1 TITLE</Text>
 
         <Text variant="h2">Link</Text>
@@ -38,8 +35,9 @@ export default function DesignSystem() {
         <Button variant="secondary" destructive>Cancel</Button>
         <Button variant="tertiary" destructive>Remove</Button>
 
-        <Text variant="h2">Header</Text>
-        <Header />
+        {/* commenting out until I figure out how to override position, it currently sticks to the top when scrolled to */}
+        {/* comment *<Text variant="h2">Header</Text>
+        <Header className="absolute"/> */}
 
         <Text variant="h2">Cards</Text>
         <Card title="Card Title" description="This is a generic card that can be used anywhere" />
@@ -106,7 +104,6 @@ export default function DesignSystem() {
             value={selectedOption}
             onChange={(e) => setSelectedOption(e.target.value)}
         />
-        </div>
     </Layout>
     )
 }

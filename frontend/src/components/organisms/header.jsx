@@ -8,15 +8,15 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   const usefulLinks = [
-    { label: "Project 1", href: "/getting-started" },
-    { label: "Project 2", href: "/docs" },
-    { label: "Project 3", href: "/about" },
-    { label: "Project 4", href: "/test" },
+    { label: "All", href: "/projects" },
+    { label: "Project 1", href: "/docs" },
+    { label: "Project 2", href: "/about" },
+    { label: "Project 3", href: "/test" },
   ]
 
   return (
     <nav className="sticky top-0 bg-secondary-default shadow-lg z-50">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
 
         <div className="flex items-center gap-2">
           <Icon name="WindowIcon" size="md" color="text-tertiary-default" />
