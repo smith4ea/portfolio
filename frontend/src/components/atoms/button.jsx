@@ -14,17 +14,17 @@ export default function Button({
   const baseStyles = "rounded-lg transition font-medium"
   
   const variants = {
-    primary: "bg-primary-default text-dark px-6 py-2",
-    secondary: "bg-transparent text-primary-default border border-primary-default px-6 py-2",
+    primary: "bg-primary-default hover:bg-primary-hover text-dark px-6 py-2",
+    secondary: "bg-transparent hover:bg-secondary-hover text-primary-default border border-primary-default px-6 py-2",
     tertiary: "bg-transparent text-primary-default",
     icon: "bg-transparent text-primary-default hover:bg-secondary-hover p-2",
   }
   
   const destructiveVariants = {
-    primary: "bg-error-default text-white px-6 py-2",
-    secondary: "bg-transparent text-error-default border border-error-default px-6 py-2",
+    primary: "bg-error-default hover:bg-error-hover text-white px-6 py-2",
+    secondary: "bg-transparent hover:bg-secondary-hover text-error-default border border-error-default px-6 py-2",
     tertiary: "bg-transparent text-error-default",
-    icon: "bg-transparent text-error-default hover:bg-secondary-hover p-2",
+    icon: "bg-transparent hover:bg-secondary-hover text-error-default p-2",
   }
   
   const styleClass = destructive ? destructiveVariants[variant] : variants[variant]

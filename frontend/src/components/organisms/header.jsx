@@ -19,14 +19,13 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
         <div className="flex items-center gap-2">
-          <Icon name="PaintBrushIcon" size="md" color="text-tertiary-default" />
+          <Icon name="WindowIcon" size="md" color="text-tertiary-default" />
           <h1 className="text-2xl font-bold text-primary-default p-1 ">Evan Smith</h1>
         </div>
         
         {/* Desktop Navigation */}
         <ul className="hidden md:flex gap-6 list-none m-0 p-0">
           <NavLink href="/">Home</NavLink>
-          <NavLink href="/projects">Projects</NavLink>
           <Dropdown label="Projects" items={usefulLinks} />
           <NavLink href="/design-system">Design System</NavLink>
         </ul>
@@ -59,9 +58,8 @@ export default function Header() {
         <div className="md:hidden bg-secondary-default border-t border-neutral-600">
           <ul className="flex flex-col gap-4 p-6 list-none">
             <NavLink href="/">Home</NavLink>
-            <NavLink href="/projects">Projects</NavLink>
             <Dropdown label="Projects" items={usefulLinks} />
-            <NavLink href="/contact">Design System</NavLink>
+            <NavLink href="/design-system">Design System</NavLink>
           </ul>
         </div>
       )}
