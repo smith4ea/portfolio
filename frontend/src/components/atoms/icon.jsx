@@ -23,7 +23,7 @@ export default function Icon({
     return <span>Icon not found: {name}</span>
   }
 
-  const colorClass = color || "text-inherit transition-colors duration-300"
+  const colorClass = color || "text-inherit"
 
   return (
     <IconComponent className={`${sizes[size]} ${colorClass} ${className}`} />
