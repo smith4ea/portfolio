@@ -26,6 +26,8 @@ export default function DesignSystem() {
             subtitle="Under construction: A collection of reusable components and styles for building consistent user interfaces."
             imageUrl={designSystemImage}
             imagePosition="right"
+            primaryButtonText="Check it out"
+            primaryButtonHref="#"
         />
 
         <Text variant="h1">H1 TITLE</Text>
