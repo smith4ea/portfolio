@@ -68,7 +68,7 @@ export default function DesignSystem() {
         <p className="text-slate-700">Character count: {message.length}</p>
 
         <Text variant="h2">Icons</Text>
-        <Icon name="StarIcon" variant="solid" size="sm" color="text-primary-default" />
+        <Icon name="StarIcon" variant="solid" size="sm" />
         <Icon name="StarIcon" variant="solid" size="lg" color="text-error-default" />
         <Icon name="CheckIcon" variant="solid" size="lg" color="text-tertiary-default" />
 

@@ -16,7 +16,7 @@ export default function Textarea({
         value={value}
         onChange={onChange}
         rows={rows}
-        className={`bg-white text-slate-700 rounded-lg px-4 py-2 focus:outline-none border-2 focus:border-slate-600 transition resize-none ${className}`}
+        className={`bg-white dark:bg-slate-800 text-slate-700 dark:text-zinc-100 rounded-lg px-4 py-2 focus:outline-none border-2 border-slate-300 dark:border-slate-600 focus:border-slate-600 dark:focus:border-slate-500 transition-colors duration-300 resize-none ${className}`}
       />
     </div>
   )

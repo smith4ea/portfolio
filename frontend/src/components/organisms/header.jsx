@@ -3,9 +3,11 @@ import NavLink from "../molecules/navlink"
 import Dropdown from "../molecules/dropdown"
 import Button from "../atoms/button"
 import Icon from "../atoms/icon"
+import { useTheme } from "../../contexts/ThemeContext"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
+  const { isDark, toggleTheme } = useTheme()
 
   const usefulLinks = [
     { label: "All", href: "/projects" },
@@ -15,12 +17,12 @@ export default function Header() {
   ]
 
   return (
-    <nav className="sticky w-full top-0 bg-slate-100/50 shadow-lg z-50 backdrop-blur-md border border-gray-200 border-b border-white/20">
+    <nav className="sticky w-full top-0 bg-slate-100/50 dark:bg-slate-900/50 shadow-lg z-50 backdrop-blur-md border border-gray-200 dark:border-slate-700 border-b border-white/20 dark:border-b-slate-700/50 transition-colors duration-300">
       <div className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
 
         <div className="flex items-center gap-2">
-          <Icon name="PaintBrushIcon" size="md" color="text-slate-700" />
-          <h1 className="text-2xl font-bold text-slate-700 p-1 ">Evan Smith</h1>
+          <Icon name="PaintBrushIcon" size="md" color="text-slate-700 dark:text-zinc-100" />
+          <h1 className="text-2xl font-bold text-slate-700 dark:text-zinc-100 p-1 transition-colors duration-300">Evan Smith</h1>
         </div>
         
         {/* Desktop Navigation */}
@@ -34,8 +36,8 @@ export default function Header() {
         <div className="flex items-center gap-2 md:hidden">
           <Button 
             variant="icon" 
-            icon="SunIcon" 
-            onClick={() => {/* dark mode toggle will go here */}}
+            icon={isDark ? "MoonIcon" : "SunIcon"} 
+            onClick={toggleTheme}
           />
           <Button 
             variant="icon" 
@@ -47,9 +49,9 @@ export default function Header() {
         {/* Desktop Theme Toggle */}
         <Button 
           variant="icon" 
-          icon="SunIcon" 
+          icon={isDark ? "MoonIcon" : "SunIcon"} 
           className="hidden md:flex"
-          onClick={() => {/* dark mode toggle will go here */}}
+          onClick={toggleTheme}
         />
       </div>
 

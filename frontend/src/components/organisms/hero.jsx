@@ -44,7 +44,7 @@ export default function Hero({
           <Text variant="h1" className="text-6xl">
             {title}
           </Text>
-          <Text variant="body" className="text-xl text-slate-700">
+          <Text variant="body" className="text-xl text-slate-700 dark:text-zinc-300">
             {subtitle}
           </Text>
           {(primaryButtonText || secondaryButtonText) && (

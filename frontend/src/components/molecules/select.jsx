@@ -38,7 +38,7 @@ export default function Select({
         <button
           ref={buttonRef}
           onClick={() => setIsOpen(!isOpen)}
-          className={`w-full bg-white text-slate-700 border-2 rounded-lg px-4 py-2 focus:outline-none focus:border-slate-600 transition cursor-pointer font-sans flex justify-between items-center ${className}`}
+          className={`w-full bg-white dark:bg-slate-800 text-slate-700 dark:text-zinc-100 border-2 border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2 focus:outline-none focus:border-slate-600 dark:focus:border-slate-500 transition-colors duration-300 cursor-pointer font-sans flex justify-between items-center ${className}`}
         >
           <span>{displayLabel}</span>
           <Icon 

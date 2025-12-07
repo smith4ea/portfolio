@@ -3,7 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply transition-colors duration-300;
+}
+
 input::placeholder,
 textarea::placeholder {
-  @apply text-neutral-800 opacity-50;
+  @apply text-neutral-800 dark:text-zinc-400 opacity-50 transition-colors duration-300;
 }
