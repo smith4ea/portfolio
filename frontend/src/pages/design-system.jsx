@@ -11,6 +11,7 @@ import Select from '../components/molecules/select'
 import { useState } from 'react'
 import Layout from '../components/templates/layout'
 import Hero from '../components/organisms/hero'
+import designSystemImage from '../assets/images/designsystem.jpg'
 
 export default function DesignSystem() {
 
@@ -20,6 +21,13 @@ export default function DesignSystem() {
 
     return (
     <Layout>
+        <Hero 
+            title="Design System"
+            subtitle="Under construction: A collection of reusable components and styles for building consistent user interfaces."
+            imageUrl={designSystemImage}
+            imagePosition="right"
+        />
+
         <Text variant="h1">H1 TITLE</Text>
 
         <Text variant="h2">Link</Text>
@@ -34,10 +42,6 @@ export default function DesignSystem() {
         <Button variant="primary" destructive>Delete</Button>
         <Button variant="secondary" destructive>Cancel</Button>
         <Button variant="tertiary" destructive>Remove</Button>
-
-        {/* commenting out until I figure out how to override position, it currently sticks to the top when scrolled to */}
-        {/* comment *<Text variant="h2">Header</Text>
-        <Header className="absolute"/> */}
 
         <Text variant="h2">Cards</Text>
         <Card title="Card Title" description="This is a generic card that can be used anywhere" />

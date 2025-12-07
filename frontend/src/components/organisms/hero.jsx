@@ -69,6 +69,17 @@ export default function Hero({
           )}
         </div>
 
+        {/* Image on left/right */}
+        {isSideBySide && imageUrl && (
+          <div className={imagePosition === "left" ? "md:order-2" : "md:order-1"}>
+            <img 
+              src={imageUrl} 
+              alt="Hero" 
+              className="w-full rounded-lg shadow-lg"
+            />
+          </div>
+        )}
+
         {/* Image on bottom */}
         {imagePosition === "bottom" && imageUrl && (
           <div>

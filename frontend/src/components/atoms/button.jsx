@@ -22,7 +22,7 @@ export default function Button({
   
   const destructiveVariants = {
     primary: "bg-red-700 hover:bg-red-600 text-white px-6 py-2",
-    secondary: "bg-transparent hover:bg-red-300 text-red-700 border-2 border-red-500 px-6 py-2",
+    secondary: "bg-transparent hover:bg-red-300 text-red-700 border-2 border-red-700 px-6 py-2",
     tertiary: "bg-transparent text-red-700",
     icon: "bg-transparent text-red-700 hover:bg-red-300 p-2",
   }

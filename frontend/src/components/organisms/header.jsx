@@ -15,7 +15,7 @@ export default function Header() {
   ]
 
   return (
-    <nav className="fixed w-full top-0 bg-white/10 shadow-lg z-50 backdrop-blur-md border border-gray-200 border-b border-white/20">
+    <nav className="sticky w-full top-0 bg-slate-100/50 shadow-lg z-50 backdrop-blur-md border border-gray-200 border-b border-white/20">
       <div className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
 
         <div className="flex items-center gap-2">

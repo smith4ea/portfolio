@@ -13,7 +13,7 @@ export default function Home() {
         subtitle="I'm a UX Designer/Engineer passionate about building beautiful, functional web applications.
         I love learning new technologies and creating intuitive user experiences."
         imageUrl={heroImage}
-        imagePosition="bottom"
+        imagePosition="right"
         primaryButtonText="View My Work"
         primaryButtonHref="/projects"
         secondaryButtonText="Get in Touch"
