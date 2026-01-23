@@ -21,13 +21,12 @@ export default function DesignSystem() {
 
     return (
     <Layout>
-        <Hero 
+        <Hero
             title="Design System"
-            subtitle="Under construction: A collection of reusable components and styles for building consistent user interfaces."
-            imageUrl={designSystemImage}
-            imagePosition="right"
+            subtitle="🚧 Under construction: A collection of reusable components and styles for building consistent user interfaces."
             primaryButtonText="Check it out"
             primaryButtonHref="#"
+            imagePosition='bottom'
         />
 
         <Text variant="h1">H1 TITLE</Text>
